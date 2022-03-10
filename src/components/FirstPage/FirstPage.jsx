@@ -1,14 +1,18 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Player from "../Player/Player";
-// import styles from "./FirstPage.module.css";
-
 import Header from "../Header/Header";
+import Button from "../Button/Button";
+import "./FirstPage.module.css";
 
-const FirstPage = () => {
+const FirstPage = ({ onClick, numOfPlayer }) => {
   return (
     <>
       <Header />
       <Player />
+      <Link to="/setpage">
+        <Button onClick={onClick} />
+      </Link>
     </>
   );
 };

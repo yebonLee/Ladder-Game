@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from "./Player.module.css";
 
-const Player = () => {
+const Player = (props) => {
   let [numOfPlayer, setNumOfPlayer] = useState(2);
   const addPlayer = () => {
     numOfPlayer += 1;
