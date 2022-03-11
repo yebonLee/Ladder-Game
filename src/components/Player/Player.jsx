@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import Button from "../Button/Button";
 import styles from "./Player.module.css";
 
 const Player = (props) => {
@@ -19,6 +21,12 @@ const Player = (props) => {
       setNumOfPlayer(2);
     }
   };
+
+  const navigate = useNavigate();
+
+  const handleNext = (e) => {
+    navigate(`/setpage?num=${numOfPlayer}`);
+  };
   return (
     <div className={styles.container}>
       <p>Set the number of players (2 - 6)</p>
@@ -31,6 +39,7 @@ const Player = (props) => {
           +
         </button>
       </div>
+      <Button title="Next" onClick={handleNext} />
     </div>
   );
 };

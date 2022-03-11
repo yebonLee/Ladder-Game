@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+.randomPlayerContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.randomRewardContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.randomPlayer {
+  padding: 0.5rem;
+}
+.randomReward {
+  padding: 0.5rem;
+}
