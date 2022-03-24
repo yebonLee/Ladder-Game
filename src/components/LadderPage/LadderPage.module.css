@@ -1,0 +1,45 @@
+/* .container {
+  display: flex;
+  flex-direction: column;
+} */
+
+/* canvas {
+  display: flex;
+  height: 200px;
+} */
+.playerNameContainer {
+  display: flex;
+  justify-content: space-around;
+}
+.playerName {
+  /* text-align: center; */
+  transition-duration: 0.4s;
+
+  background-color: #f5f5f5;
+  color: #121212;
+  border: 2px solid #121212;
+  border-radius: 10px;
+  height: 2rem;
+  margin: 10px;
+  padding: 0.5rem 0.3rem 0.1rem 0.3rem;
+  cursor: pointer;
+}
+.playerName:hover {
+  background-color: #121212;
+  color: white;
+}
+.rewardNameContainer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.rewardName {
+  background-color: #f5f5f5;
+  color: #121212;
+  border: 2px solid #121212;
+  border-radius: 10px;
+  /* width: 2rem; */
+  height: 2rem;
+  margin: 10px;
+  padding: 0.5rem 0.3rem 0.1rem 0.3rem;
+}
